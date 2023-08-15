@@ -33,6 +33,7 @@ export default class QuickSort extends Sort {
         if (arr.length < 1) {
             return arr;
         }
+
         const leftArr = [];
         const rightArr = [];
 
