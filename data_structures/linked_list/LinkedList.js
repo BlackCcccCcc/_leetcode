@@ -363,7 +363,7 @@ export default class LinkedList {
     }
 
     toArray() {
-        let nodes = [];
+        const nodes = [];
         let currentNode = this.head;
         while (currentNode) {
             nodes.push(currentNode);
@@ -384,6 +384,10 @@ export default class LinkedList {
                 return node.toString(callback);
             })
             .toString();
+
+        // return this.LinkedList.toArray((node) => {
+        //     return node.value;
+        // }).toString();
     }
 
     reverse() {

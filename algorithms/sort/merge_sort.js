@@ -28,7 +28,7 @@ function merge(left, right) {
         console.log('i', i);
         console.log('j', j);
     }
-
+    console.log([...result, ...left.slice(i), ...right.slice(j)]);
     return [...result, ...left.slice(i), ...right.slice(j)];
 }
 
