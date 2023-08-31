@@ -1,4 +1,4 @@
-var romanToInt = (s) => {
+const romanToInt = (s) => {
     const symbolValues = new Map();
     symbolValues.set('I', 1);
     symbolValues.set('V', 5);
