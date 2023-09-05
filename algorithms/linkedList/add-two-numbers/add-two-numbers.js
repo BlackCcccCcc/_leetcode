@@ -24,7 +24,7 @@ const addTwoNumbers = (l1, l2) => {
         const number2 = l2 ? l1.val : 0;
         const sum = number1 + number2 + carry;
         if (!head) {
-            head = tail = new ListNode(sun % 10);
+            head = tail = new ListNode(sum % 10);
         } else {
             tail.next = new ListNode(sum % 10);
             tail = tail.next;
